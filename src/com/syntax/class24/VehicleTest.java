@@ -2,21 +2,23 @@ package com.syntax.class24;
 
 public class VehicleTest {
 public static void main(String[] args) {
-	 
+	//Create a class Bus, which will be concrete child class 
+	//of the vehicle class.Create a SchoolBus class 
+	//that will be a subclass of the Bus and override 
+	//method drive() and stop().Create an array of vehicles
+	//and see which methods will be available
+	//and see the output of the program
 
 	//Vehicle car1=new Car("Sidan");
-	Vehicle car2=new Tesla("yello","tesla","sedan");
-     car2.drive();
-     car2.brake();
-     car2.start();
-     car2.stop();
+	Vehicle []car= {new Tesla("yello","tesla","sedan"),new Toyota("gray","Toyota","Corola"),
+			new Bus("orage","Bus","A Bus"),new SchoolBus("Schoole Buse","orange","Schoole Buse")};
      
-     Vehicle car3=new Toyota("yello","tesla","sedan");
-     car3.drive();
-     car3.brake();
-     car3.start();
-     car3.stop();
-    
+    for(Vehicle cars:car) {
+   cars.brake();
+   cars.drive();
+   cars.start();
+   cars.stop();
+    }
     Vehicle.total();// count total of created obj
 }  
 }

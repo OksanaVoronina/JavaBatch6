@@ -30,7 +30,7 @@ abstract class  Car extends Vehicle{
 		this.carType=carType;
 	}
 	public void brake() {
-		System.out.println(carType+" have braks");
+		System.out.println(carType+" have breaks");
 	}
 	
 }
@@ -55,6 +55,39 @@ class Toyota extends Car{
 	@Override
 	public void start() {
 		System.out.println(" starts remotely");
+	}
+
+}
+class Bus extends Car{
+	String make;
+	Bus(String color,String  carType,String make){
+		super(color,carType);
+		this.make=make;
+	}
+	@Override
+	public void start() {
+		System.out.println(make+" starts with key");
+	}
+	
+
+}
+class SchoolBus extends Bus{
+	
+	SchoolBus(String make,String color,String carType){
+		super(make,color,carType);
+		
+	}
+	@Override
+	public void start() {
+		System.out.println(make+" starts school bus key");
+	}
+	@Override
+	public void drive() {
+		System.out.println(make+"Schoole bus drive");
+	}
+	@Override
+	public void stop() {
+		System.out.println(make+"Stops");
 	}
 
 }

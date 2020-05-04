@@ -41,14 +41,12 @@ public static void main (String args[]) {
 	boolean isPrime=true;
 	if (give>1) {
 		for(int i=2;i<give;i++) {
-			if(give%i==0) {
+			if(give%i!=0) {
 				isPrime=false;
 				break;
 			}
 			}
 		
-	}else {
-		isPrime=false;
 	}
 	System.out.println("giving num  "+give+" is "+isPrime);
 	

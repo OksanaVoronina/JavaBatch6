@@ -24,6 +24,8 @@ public static void main(String[] args) {
     Iterator <String>myIter=breakfast.iterator();
     	while(myIter.hasNext()) {
     	System.out.println(myIter.next());
+    	
+    	
     	}
     }
 	

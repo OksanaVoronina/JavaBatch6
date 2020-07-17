@@ -15,6 +15,7 @@ public class Tesk1 {
 
 		Iterator<Exception> eit = list.iterator();
 		while (eit.hasNext()) {
+			//String m=eit.next().getMessage();
 			eit.next().printStackTrace();
 		}
 	}
